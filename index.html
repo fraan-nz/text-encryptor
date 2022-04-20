@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./normalize.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Encriptador de texto</title>
+	</head>
+	<body>
+		<main class="main">
+			<div class="main__wrapper">
+				<a href="https://www.aluracursos.com/" target="_black"
+					><img src="./src/logo.png" alt="alura logo" class="logo"
+				/></a>
+				<section class="section__form">
+					<form class="form">
+						<textarea
+							class="form__textArea"
+							placeholder="Ingrese el texto aquí"
+							spellcheck="false"
+						></textarea>
+						<img
+							src="./src/x-solid.svg"
+							alt="limpiar texto"
+							class="form__textArea--clean hide"
+							title="Borrar Texto"
+							id="cleanBtn"
+						/>
+						<div class="form__bottom">
+							<p class="text__small">
+								<img src="./src/exclamation.png" alt="signo exclamacion" /> Solo
+								letras minúsculas y sin acentos
+							</p>
+							<div class="form__buttons">
+								<button class="btn btn--primary" id="encryptBtn">
+									Encriptar
+								</button>
+								<button class="btn btn--secondary" id="decryptBtn">
+									Desencriptar
+								</button>
+							</div>
+						</div>
+					</form>
+				</section>
+				<section class="section__message">
+					<div class="section__message--waiting" id="msg--waiting">
+						<img
+							src="./src/image.png"
+							alt="esperando mensaje"
+							class="waiting__img"
+						/>
+						<div class="waiting__text">
+							<p>Ningún mensaje fue encontrado</p>
+							<p>Ingresa el texto que desees encriptar o desencriptar.</p>
+						</div>
+					</div>
+
+					<div class="message hide" id="msg">
+						<p class="message__text"></p>
+						<button class="btn btn--secondary" id="copyBtn">Copiar</button>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<a
+					href="https://www.oracle.com/ar/education/oracle-next-education/"
+					target="_blank"
+				>
+					<img
+						src="./src/logo-ft.png"
+						alt="logo alura y oracle"
+						class="footer__logo"
+					/>
+				</a>
+				<a href="#" class="footer__github">
+					<img src="./src/github.svg" alt="github logo" class="github-logo" />
+					Alura Challenge by Franco Nuñez
+				</a>
+			</div>
+		</footer>
+		<script src="./app.js"></script>
+	</body>
+</html>
